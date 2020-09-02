@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        android:title="@string/action_ot_save"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_private"
+        android:title="@string/action_ot_private"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_draft"
+        android:title="@string/action_ot_draft"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_preview"
+        android:title="@string/action_ot_preview"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_media"
+        android:title="@string/action_ot_media"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_reference"
+        android:title="@string/action_ot_reference"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_setting"
+        android:title="@string/action_ot_setting"
+        android:visible="true"
+        app:showAsAction="never" />
+
+</menu>

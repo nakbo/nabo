@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.personage.PersonageActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/personage_toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText.edit"
+        app:subtitleTextAppearance="@style/Toolbar.SubTitleText.edit"
+        app:theme="@style/ToolBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    <ScrollView
+        android:layout_below="@id/personage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                tools:ignore="HardcodedText"
+                android:text="个人信息"
+                style="@style/personage_title" />
+            <RelativeLayout style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="头像"
+                    style="@style/list_text" />
+                <androidx.cardview.widget.CardView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:id="@+id/personage_gravatar"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="昵称"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/personage_screenName"
+                    style="@style/list_text_value"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="用户名"
+                    style="@style/list_text" />
+                <TextView
+                    android:id="@+id/set_name"
+                    tools:ignore="RelativeOverlap"
+                    style="@style/list_text_value" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="密码"
+                    style="@style/list_text" />
+                <TextView
+                    android:id="@+id/set_password"
+                    tools:ignore="RelativeOverlap"
+                    style="@style/list_text_value" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="邮箱"
+                    style="@style/list_text" />
+                <TextView
+                    android:id="@+id/set_email"
+                    tools:ignore="RelativeOverlap"
+                    style="@style/list_text_value" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="博客域名"
+                    style="@style/list_text" />
+                <TextView
+                    android:id="@+id/set_siteUrl"
+                    tools:ignore="RelativeOverlap"
+                    style="@style/list_text_value" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_about"
+                style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="关于"
+                    style="@style/list_text" />
+                <ImageView
+                    android:src="@drawable/ic_list_next"
+                    tools:ignore="ContentDescription"
+                    style="@style/list_text_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_setting"
+                style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="个性设置"
+                    style="@style/list_text" />
+                <ImageView
+                    android:src="@drawable/ic_list_next"
+                    tools:ignore="ContentDescription"
+                    style="@style/list_text_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_accountString"
+                style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="切换账号"
+                    style="@style/list_text" />
+                <ImageView
+                    android:src="@drawable/ic_list_next"
+                    tools:ignore="ContentDescription"
+                    style="@style/list_text_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_logout"
+                style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="退出登录"
+                    style="@style/list_text" />
+                <ImageView
+                    android:src="@drawable/ic_list_next"
+                    tools:ignore="ContentDescription"
+                    style="@style/list_text_next" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

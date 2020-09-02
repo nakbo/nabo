@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="cn.krait.nabo.activity.register.LoginActivity">
+
+    <ScrollView
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="登录更精彩"
+                android:textColor="@color/black_dark"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="客官首先需输入你博客的域名"
+                android:textColor="@color/black_dark"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_background">
+
+                <Spinner
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/Spinner_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </Spinner >
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/et_siteUrl"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="请输入博客域名"
+                    android:importantForAutofill="no"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_dark"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,TextFields" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    style="@style/list_text"
+                    android:text="是否已开启伪静态"
+                    tools:ignore="HardcodedText" />
+                <Switch
+                    android:id="@+id/allow_static"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:id="@+id/btn_show_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_dark_1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="检测域名"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_bvc_pull"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_show_obtain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_dark_1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="预览体验"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_bvc_pull"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

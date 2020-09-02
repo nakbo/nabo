@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.personage.setting.SettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:subtitleTextAppearance="@style/Toolbar.SubTitleText.edit"
+        app:theme="@style/ToolBarTheme"
+        app:titleTextAppearance="@style/Toolbar.TitleText.edit" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/personage_title"
+                android:text="个性设置"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:id="@+id/btn_colorPrimary"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="主题主色"
+                    tools:ignore="HardcodedText" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/colorPrimaryView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="@color/theme_primary"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_colorAccent"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="主题强调色"
+                    tools:ignore="HardcodedText" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/colorAccentView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="@color/theme_accent"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/list_layout"
+                android:id="@+id/btn_setting_postPageSize"
+                android:onClick="about">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/list_text_title"
+                        android:text="文章数目"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        style="@style/list_text_subtitle"
+                        android:text="主界面每页显示文章章数"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_setting_postPageSize_1"
+                    style="@style/list_text_value"
+                    android:text="0"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/list_layout"
+                android:id="@+id/btn_setting_postTextLength"
+                android:onClick="about">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/list_text_title"
+                        android:text="文章瀑布流字数"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        style="@style/list_text_subtitle"
+                        android:text="文章字符数小于该数则显示小瀑布流块"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_setting_postTextLength_1"
+                    style="@style/list_text_value"
+                    android:text="0"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/list_layout"
+                android:id="@+id/btn_setting_commentPageSize"
+                android:onClick="about">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/list_text_title"
+                        android:text="评论数目"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        style="@style/list_text_subtitle"
+                        android:text="评论页面每页显示评论条数"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_setting_commentPageSize_1"
+                    style="@style/list_text_value"
+                    android:text="0"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_allowCommentsRefresh"
+                style="@style/list_layout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/list_text_title"
+                        android:text="评论刷新"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        style="@style/list_text_subtitle"
+                        android:text="进入评论页面是否自动刷新评论"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <Switch
+                    android:id="@+id/btn_allowCommentsRefresh_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_imageUrlReplaceAble"
+                style="@style/list_layout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/list_text_title"
+                        android:text="图片链接实时替换"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        style="@style/list_text_subtitle"
+                        android:text="关闭则发布文章时自动替换链接"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <Switch
+                    android:id="@+id/btn_imageUrlReplaceAble_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_articleDeleteAble"
+                style="@style/list_layout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/list_text_title"
+                        android:text="文章删除保险"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        style="@style/list_text_subtitle"
+                        android:text="关闭后可在文章页删除文章"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <Switch
+                    android:id="@+id/btn_articleDeleteAble_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_checkVersionAble"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="自动检测新版本"
+                    tools:ignore="HardcodedText" />
+                <Switch
+                    android:id="@+id/btn_checkVersionAble_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_recover"
+                style="@style/list_layout">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/list_text_title"
+                        android:text="恢复默认设置"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        style="@style/list_text_subtitle"
+                        android:text="将会初始化为默认配置"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@drawable/ic_list_next"
+                    tools:ignore="ContentDescription"
+                    style="@style/list_text_next" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

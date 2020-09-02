@@ -1,0 +1,42 @@
+<resources>
+    <string name="official_appName">nabo</string>
+    <string name="official_appNameCn">那博</string>
+    <string name="official_siteUrl">nabo.krait.cn</string>
+
+    <string name="developer_name">权那他</string>
+    <string name="developer_nameEn">Kraity</string>
+    <string name="developer_site">krait.cn</string>
+    <string name="developer_github">github.com/kraity</string>
+
+    <string name="action_ot_save">发布</string>
+    <string name="action_ot_preview">预览</string>
+    <string name="action_ot_draft">存稿</string>
+    <string name="action_ot_private">存密</string>
+    <string name="action_ot_edit">编辑</string>
+    <string name="action_ot_media">附件管理</string>
+    <string name="action_ot_setting">高级选项</string>
+    <string name="action_ot_reference">语法参考</string>
+    <string name="edit_img">图片</string>
+    <string name="format_bold">加粗</string>
+    <string name="format_italic">斜体</string>
+    <string name="markdown_name">MarkdownEditor</string>
+    <string name="format_header_1">一级标题</string>
+    <string name="format_header_2">二级标题</string>
+    <string name="format_header_3">三级标题</string>
+    <string name="format_header_4">四级标题</string>
+    <string name="format_header_5">五级标题</string>
+    <string name="format_quote">文字引用</string>
+    <string name="format_strike">删除线</string>
+    <string name="undo">撤销</string>
+    <string name="ot_time">当前时间</string>
+    <string name="redo">前进</string>
+    <string name="link">链接</string>
+    <string name="list">无序列表</string>
+    <string name="sd_fail">获取SD卡读写权限失败</string>
+    <string name="editTextTip">开始你的记录..</string>
+    <string name="editTitleTip">标题</string>
+    <string name="ot_tip">提示</string>
+    <string name="ot_tip_preview">左滑可以快速返回到编辑界面。</string>
+    <string name="ot_tip_i_know">我知道了</string>
+
+</resources>

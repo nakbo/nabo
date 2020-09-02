@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.personage.setting.AboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:subtitleTextAppearance="@style/Toolbar.SubTitleText.edit"
+        app:theme="@style/ToolBarTheme"
+        app:titleTextAppearance="@style/Toolbar.TitleText.edit" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/personage_title"
+                android:text="关于"
+                tools:ignore="HardcodedText" />
+
+
+            <RelativeLayout style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="软名"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/about_appName"
+                    style="@style/list_text_value"
+                    android:text="@string/official_appName"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="中软名"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/about_appNameCn"
+                    style="@style/list_text_value"
+                    android:text="@string/official_appNameCn"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="版本"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/about_versionName"
+                    style="@style/list_text_value"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/list_layout"
+                android:id="@+id/btn_official_siteUrl"
+                android:onClick="about">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="官网"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/about_officialSite"
+                    style="@style/list_text_value"
+                    android:text="@string/official_siteUrl"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/list_layout"
+                android:id="@+id/btn_developer"
+                android:onClick="about">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="开发者"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/about_developer_name"
+                    style="@style/list_text_value"
+                    android:text="@string/developer_name"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/list_layout"
+                android:id="@+id/btn_developer_github"
+                android:onClick="about">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="Github"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/about_developer_github"
+                    style="@style/list_text_value"
+                    android:text="@string/developer_github"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_sponsorship"
+                style="@style/list_layout">
+                <TextView
+                    tools:ignore="HardcodedText"
+                    android:text="赞助我们"
+                    style="@style/list_text" />
+                <ImageView
+                    android:src="@drawable/ic_list_next"
+                    tools:ignore="ContentDescription"
+                    style="@style/list_text_next" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#7C4DFF</color>
+    <color name="colorAccent">#40C4FF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_dark_1">#f7f7f7</color>
+    <color name="white_dark_2">#F4F4F4</color>
+    <color name="white_dark_3">#dedede</color>
+    <color name="white_dark_4">#f5f7fa</color>
+    <color name="white_dark_5">#eeeff3</color>
+    <color name="white_dark_6">#f2f2f2</color>
+
+    <color name="black">#000000</color>
+    <color name="black_dark">#0e0f1a</color>
+    <color name="black_dark_1">#2c2c2c</color>
+    <color name="black_dark_2">#5F5F5F</color>
+    <color name="black_dark_3">#515151</color>
+    <color name="black_dark_4">#333333</color>
+    <color name="black_dark_5">#444444</color>
+    <color name="black_dark_6">#999999</color>
+    <color name="black_dark_7">#414141</color>
+    
+    <color name="purple_1">#a04cf7</color>
+    <color name="purple_2">#391f4d</color>
+
+    <color name="orange_1">#FFAB3A</color>
+    <color name="orange_2">#FFDD00</color>
+    <color name="orange_3">#F24806</color>
+    <color name="orange_4">#FF7323</color>
+    <color name="orange_5">#ff734a</color>
+
+    <color name="brown_1">#795548</color>
+    <color name="brown_2">#8D6E63</color>
+
+    <color name="yellow_1">#ffde39</color>
+
+    <color name="green_1">#00D8A0</color>
+    <color name="green_2">#15e2ad</color>
+
+    <color name="blue_1">#723AFF</color>
+
+    <color name="theme_ic">@color/green_1</color>
+    <color name="theme_ic_bg">@color/black_dark_5</color>
+
+    <color name="theme_primary">#673AB7</color>
+    <color name="theme_accent">#40C4FF</color>
+
+    <color name="colorEditorMore">#f4f4f4</color>
+    <color name="colorEditorBackground">#fff</color>
+    <color name="colorText">#444</color>
+
+    <color name="ic_launcher_background">#673AB7</color>
+
+</resources>

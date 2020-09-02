@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.page.EditPostSetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:subtitleTextAppearance="@style/Toolbar.SubTitleText.edit"
+        app:theme="@style/ToolBarTheme"
+        app:titleTextAppearance="@style/Toolbar.TitleText.edit" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/post_toolbar"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btn_slug"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="SLUG"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="默认"
+                    android:id="@+id/publish_slug"
+                    style="@style/list_text_value"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_category"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="分类"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="默认"
+                    android:id="@+id/publish_category"
+                    style="@style/list_text_value"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_tag"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="标签"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="默认"
+                    android:id="@+id/publish_tag"
+                    style="@style/list_text_value"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_password"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="访问密码"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="默认"
+                    android:id="@+id/publish_password"
+                    style="@style/list_text_value"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_allowComment"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="评论许可"
+                    tools:ignore="HardcodedText" />
+                <Switch
+                    android:id="@+id/publish_allowComment"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_allowPing"
+                style="@style/list_layout">
+
+                <TextView
+                    style="@style/list_text"
+                    android:text="PING许可"
+                    tools:ignore="HardcodedText" />
+
+                <Switch
+                    android:id="@+id/publish_allowPing"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
